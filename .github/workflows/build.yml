@@ -1,5 +1,7 @@
 name: Build APK
-
+  working-directory: app
+  run: ./gradlew assembleDebug
+  
 on:
   push:
     branches: [ "main" ]
